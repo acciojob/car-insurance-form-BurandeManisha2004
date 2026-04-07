@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -7,31 +6,44 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<form action="" method="post">
-		<label for="name">Name</label>
-	<input id="name" type="text" placeholder="Name" required>
-		<label for="email">Email</label>
-	<input id="email" type="email" placeholder="Email" required>
-		<label for="g-m">Gender</label>
-	<input id="g-m" type="radio"  name="gende" required>Male
-	<input id="g-f" type="radio"  name="gende" required>Female
-		<label for="cars">Select Car Brand</label>
-		<select id="cars">
-			<option>BMW</option>
-			<option>Audi</option>
-			<option>Mercedez</option>
-		</select>
-		<label for="carage">Car Age</label>
-		<input type="number" id="carage" placeholder="1234" required>
-		<label id="dop">Date Of Purches</label>
-		<input type="date" id="dop" required>
-		<label for="password">Password</label>
-		<input type="password" id="password" placeholder="Password" required>
-<button type="submit" value="submit">submit</button>
-	</form>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<form action="" method="post">
+
+	<label for="name">Name</label>
+	<input type="text" id="name" name="name" placeholder="Name" required>
+
+	<label for="email">Email</label>
+	<input type="email" id="email" name="email" placeholder="Email" required>
+
+	<label>Gender</label>
+	<input type="radio" id="g-m" name="gender" value="male" required>
+	<label for="g-m">Male</label>
+
+	<input type="radio" id="g-f" name="gender" value="female" required>
+	<label for="g-f">Female</label>
+
+	<label for="cars">Select Car Brand</label>
+	<select id="cars" name="car" required>
+		<option value="">--Select--</option>
+		<option value="bmw">BMW</option>
+		<option value="audi">Audi</option>
+		<option value="mercedes">Mercedes</option>
+	</select>
+
+	<label for="carage">Car Age</label>
+	<input type="number" id="carage" name="car_age" placeholder="1234" required>
+
+	<label for="dop">Date Of Purchase</label>
+	<input type="date" id="dop" name="dop" required>
+
+	<label for="password">Password</label>
+	<input type="password" id="password" name="password" placeholder="Password" required>
+
+	<button type="submit">Submit</button>
+
+</form>
+
+<script src="./script.js"></script>
 
 </body>
 
